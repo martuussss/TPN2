@@ -8,8 +8,7 @@ require_once 'vendor/autoload.php'; // Si usas Composer
 // Configuración de Google OAuth
 $google_client = new Google_Client();
 
-$google_client->setClientId('965057555284-pnubp0h0kcl38blkbvntir0ffh0sv891.apps.googleusercontent.com'); // Reemplaza con tu Client ID
-$google_client->setClientSecret('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'); // Reemplaza con tu Client Secret
+$client_id = "YOUR_GOOGLE_CLIENT_ID_HERE"; $client_secret = "YOUR_GOOGLE_CLIENT_SECRET_HERE";
 $google_client->setRedirectUri('http://localhost/accesocorrecto.php'); // Ajusta la URL
 $google_client->addScope('email');
 $google_client->addScope('profile');
